@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>502</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Співробітники!</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res-icon-qrc.qrc">
+    <normaloff>:/icon/icons/home_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/home_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+    border: 1px solid rgba(255, 246, 246,80);
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(62, 75, 75)
+}
+
+QLabel{
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    color:white;
+    font-size: 26px;
+    background-color: rgb(62, 75, 75);
+    border:none;
+} 
+
+QWidget{
+    background-color: rgb(22, 54, 56);
+}
+
+QPushButton{
+    background-color: rgba(116, 63, 240,80);
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    border: 1px solid rgba(247,247,247,80);
+    border-radius: 10px;
+    color: white;
+    height:50px
+}
+
+QPushButton:hover{
+    opacity: 0.2;
+    transition: all 0.5s;
+}
+
+QPushButton:pressed{
+    background-color: rgba(116, 63, 240,90);
+	border: 1px solid rgba(247,247,247,80);
+}
+
+QFrame{
+    background-color: rgb(62, 75, 75);
+    border-radius: 10px;
+    border: none;
+} 
+
+QComboBox{
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    background-color:rgb(86, 83, 90);
+    border-radius: 10px;
+    border:1px solid rgb(113, 111, 117);
+	color:white;
+}
+
+QPlainTextEdit{
+	border: 1px solid rgba(247,247,247,80);
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    font-size: 14px;
+    color: white;
+    background-color:rgb(86, 83, 90)
+}
+QTableView {
+background-color: rgb(62, 75, 75);
+border: 1px solid rgba(255,255,255,40);
+border-bottom-right-radius: 7px; 
+border-bottom-left-radius: 7px; 
+color: white;
+}
+
+QHeaderView::section {
+background-color: rgb(53, 53, 53);
+color: white;
+border: none;
+height: 50px;
+font-size: 16pt;
+}
+
+QTableView::item {
+    border-style: none;
+    border-bottom: 1px solid rgba(255,255,255,50);
+}
+
+QTableView::item:selected{
+	border: none;
+	color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 50);
+}
+
+QHBoxLayout{
+    background-color: rgb(62, 75, 75);
+    border-radius: 10px;
+    border: none;
+} </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>481</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Співробітники!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add Information</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res-icon-qrc.qrc">
+       <normaloff>:/icon/icons/add_circle_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/add_circle_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>120</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete Information</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res-icon-qrc.qrc">
+       <normaloff>:/icon/icons/delete_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/delete_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>120</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit Information</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res-icon-qrc.qrc">
+       <normaloff>:/icon/icons/edit_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/edit_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    color:white;
+    font-size: 14px;
+    background-color: rgb(62, 75, 75);
+    border:none;
+} </string>
+     </property>
+     <property name="text">
+      <string>*With PostgreSQL*</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>461</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1116</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="res-icon-qrc.qrc">:/icon/icons/handshake_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-icon-qrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
